@@ -11,19 +11,24 @@
 
 <body>
 
-    <form class="form" action="#" method="post">
+    <form class="form" id="contactForm">
         <div class="form__section">
             <input class="form__input" type="text" name="firstName" id="firstName" placeholder="Firstname">
-            <label for="">veuillez saisir un  nom valide</label>
+            <label class="error-message" for="fristName" id="fristNameError">veuillez saisir un  nom valide</label>
+        </div>
+        <div></div>
             <input class="form__input" type="text" name="password" id="password" placeholder="Password">
-            <label for="">veuillez saisir un mot de passe valide </label>
+            <label class="error-message" for="Password" id="passwordError">veuillez saisir un mot de passe valide </label>
         </div>
         <div class="form__section">
             <input class="form__input" type="email" name="email" id="email" placeholder="Email address">
-            <label for="">veuillez saisir un  adresse mail valide</label>
-            <input class="form__input" type="phone" name="phone" id="phone" placeholder="Phone number">
-            <label for="">veuillez saisir un numéro de téléphone valide</label>
+            <label class="error-message" for="emailErrror" id="emailError">veuillez saisir une  adresse mail valide</label>
         </div>
+            <div>
+
+                <input class="form__input" type="phone" name="phone" id="phone" placeholder="Phone number">
+                <label class="error-message" for="phone" id="phoneError">veuillez saisir un numéro de téléphone valide</label>
+            </div>
         <button class="form__submit" type="submit">Submit</button>
     </form>
 
