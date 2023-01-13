@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <form class="form" id="contactForm">
+        <div class="form__section">
+            <h4>Nom & Prénom : </h4>
+            <input class="form__input" type="text" name="firstName" id="firstName" placeholder="Ex : LeBron James ">
+            <label class="error-message" for="firstName" id="firstNameError">veuillez saisir un nom valide</label>
+        </div>
+        <label class="error-message" for="size" id="sizeError">veuillez saisir une taille </label>
+        </div>
+        <div class="form__section">
+            <h4>Adresse : </h4>
+            <input class="form__input" type="address" name="address" id="adress"
+                placeholder="Ex : 69 Rue du kebabiers ">
+            <label class="error-message" for="addressErrror" id="addressError">veuillez saisir une adresse
+                valide</label>
+        </div>
+        <div>
+            <h4>Téléphone</h4>
+            <input class="form__input" type="phone" name="phone" id="phone" placeholder="Ex: +336010101010">
+            <label class="error-message" for="phone" id="phoneError">veuillez saisir un numéro de téléphone
+                valide</label>
+        </div>
+        <div></div>
+        <h4>Taille : </h4>
+        <select name="size" id="size">
+            <option value="small 9$">small 9$</option>
+            <option value="medium 15$">medium 15$</option>
+            <option value="large 20$">large 20$</option>
+            <option value="xxlarge 40$">xxlarge 40$ </option>
+        </select>
+
+        <div>
+            <h4>Choissiez la pizza : </h4>
+            <select name="pizza" id="pizza">
+                <option value="BBQ">BBQ </option>
+                <option value="KEBAB">KEBAB</option>
+                <option value="SAVOYARDE ">SAVOYARDE </option>
+            </select>
+        </div>
+        <h4>valider la commande : </h4>
+        <button class="form__submit" type="submit">Submit</button>
+        <button type="reset">Annulez </button>
+    </form>
 </body>
 </html>
