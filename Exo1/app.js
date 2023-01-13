@@ -63,6 +63,5 @@ contactForm.addEventListener('submit', (event) => {
     console.log(formData)
     contactForm.reset()
     }
-})
 
 
