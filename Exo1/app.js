@@ -37,10 +37,9 @@ contactForm.addEventListener('submit', (event) => {
     const emailRegex = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm;
     const nameRegex = /^[a-zA-Z ]+$/
     const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/
+    const passwordRegex = /^\d{3} Rue [A-Z][a-z]+ [A-Z][a-z]+,[ ]\d{5} [A-Z][a-z]+ [A-Z][a-z]+/;
 
-
-
+    
     if (!formData.firstName || !nameRegex.test(formData.firstName)) {
         errors.firstName = true;
         firstNameError.style.display = 'block';
@@ -64,5 +63,6 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.reset()
     }
 })
+
 
 
